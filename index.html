@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pro amor da minha vida</title>
-</head>
     <style>
         * {
             border: 0;
@@ -12,12 +11,19 @@
             padding: 0;
             box-sizing: border-box;
         }
+        img {
+            max-height: 100%; 
+            max-width: 100%;
+            
+        }
         body {
-            background: linear-gradient(red, purple);
+            background: linear-gradient(blue, purple);
             background-repeat: no-repeat;
             background-attachment: fixed;
+            background-image: url('toque.jpg'); /* Caminho para a imagem de fundo */
+            background-size: cover;
+            opacity: 0.8; /* Ajuste a opacidade conforme necessário */
         }
-
         .btn {
             background-color: black;
             color: white;
@@ -29,17 +35,14 @@
             cursor: pointer;
             width: 200px;
         }
-
         .tituloPrincipal {
-            font: 700 38px Georgia, sans-serif;
+            font: 500 29px Georgia, sans-serif;
         }
-
         .titulo {
             text-align: center;
             padding-bottom: 50px;
             margin-top: 30px;
         }
-
         .botoes {
             display: flex;
             justify-content: space-between;
@@ -53,16 +56,16 @@
         function desvia(btn){
             btn.style.position = 'absolute' ;
             btn.style.bottom = posicao(10, 80);
-            btn.style.left = poiscao(10, 80);
+            btn.style.left = posicao(10, 80); // Corrigido 'poiscao' para 'posicao'
         }
         function posicao(min, max){
-            return(Math.random()*(max - min + min)) + "%"
+            return (Math.random() * (max - min + min)) + "%"
         }
     </script>
+</head>
 <body>
     <div class="titulo">
-        <h1 class="tituloPrincipal">Sabia que seus olhos são mais bonitos do que qualquer obra de Leonardo da Vinci
-        </h1>
+        <h1 class="tituloPrincipal">Sabia que seus olhos são mais bonitos do que qualquer obra de todos os pintores renascentistas?</h1>
     </div>
     <div class="botoes">
         <div class="botaoS">
