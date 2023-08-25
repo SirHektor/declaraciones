@@ -12,9 +12,8 @@
             box-sizing: border-box;
         }
         img {
-            max-height: 100%; 
+            max-height: 100%;
             max-width: 100%;
-            
         }
         body {
             background: linear-gradient(blue, purple);
@@ -23,43 +22,46 @@
             background-image: url('toque.jpg'); /* Caminho para a imagem de fundo */
             background-size: cover;
             opacity: 0.8; /* Ajuste a opacidade conforme necessário */
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
         .btn {
             background-color: black;
             color: white;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font: 300 40px;
-            padding: 15px 30px;
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
             border-radius: 15px;
             transition: ease-in-out;
             cursor: pointer;
-            width: 200px;
         }
         .tituloPrincipal {
-            font: 500 29px Georgia, sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 2rem;
         }
         .titulo {
             text-align: center;
-            padding-bottom: 50px;
-            margin-top: 30px;
+            padding: 2rem 0;
         }
         .botoes {
             display: flex;
-            justify-content: space-between;
-            margin: 0 400px;
+            justify-content: center;
+            gap: 2rem;
+            padding: 0 2rem;
+            flex-wrap: wrap;
         }
     </style>
     <script>
-        function sim(){
-            location.href = "https://www.youtube.com/watch?v=tB48sKGi5ag"
+        function sim() {
+            location.href = "https://www.youtube.com/watch?v=tB48sKGi5ag";
         }
-        function desvia(btn){
-            btn.style.position = 'absolute' ;
+        function desvia(btn) {
+            btn.style.position = 'absolute';
             btn.style.bottom = posicao(10, 80);
-            btn.style.left = posicao(10, 80); // Corrigido 'poiscao' para 'posicao'
+            btn.style.left = posicao(10, 80);
         }
-        function posicao(min, max){
-            return (Math.random() * (max - min + min)) + "%"
+        function posicao(min, max) {
+            return (Math.random() * (max - min + min)) + "%";
         }
     </script>
 </head>
